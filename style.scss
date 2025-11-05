@@ -1,35 +1,70 @@
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
-Header{
-    background-color: greenyellow;
-    display: flex;// ativa as caixas flexíveis
-    justify-content: flex-start; //è o padrão. Os itens são postos no começo do eixo principal eixo "X" (Horizontal)
-    justify-content: flex-end;// Os itens são postos no final do eixo principal
-    justify-content: center;// Os itens são postos no meio do eixo principal
-    justify-content: space-around; //O primeiro espaço vazio e o último são iguais. e vão ser metade dos espaçamentos internos
-    // justify-content: space-evenly;//todos os espaçamentos entre os itens serão iguais
-    // justify-content: space-between;//O primeiro item fica colado na esquerda, o ultimo item colado na direita. e os espaçamentos internos serão iguais.
-    height: 10vh;
-    align-items: flex-start;// os itens são postos no começo do eixo "Y" (Vertical)
-    align-items: flex-end;// os itens são postos no final do eixo "Y" (Vertical)
-    align-items: center;// os itens são postos no centro do eixo Y
+Header {
+  background-color: greenyellow;
+  display: flex; // ativa as caixas flexíveis
+  justify-content: flex-start; //è o padrão. Os itens são postos no começo do eixo principal eixo "X" (Horizontal)
+  justify-content: flex-end; // Os itens são postos no final do eixo principal
+  justify-content: center; // Os itens são postos no meio do eixo principal
+  justify-content: space-around; //O primeiro espaço vazio e o último são iguais. e vão ser metade dos espaçamentos internos
+  // justify-content: space-evenly;//todos os espaçamentos entre os itens serão iguais
+  // justify-content: space-between;//O primeiro item fica colado na esquerda, o ultimo item colado na direita. e os espaçamentos internos serão iguais.
+  height: 10vh;
+  align-items: flex-start; // os itens são postos no começo do eixo "Y" (Vertical)
+  align-items: flex-end; // os itens são postos no final do eixo "Y" (Vertical)
+  align-items: center; // os itens são postos no centro do eixo Y
 
-    h1{
-        border: solid red;
-    }
-    nav{
-        border: solid grey;
-        display: flex;
-        justify-content: space-evenly;
-        width: 60%;
-    }
+  h1 {
+    border: solid red;
+  }
+  nav {
+    border: solid grey;
+    display: flex;
+    justify-content: space-evenly;
+    width: 60%;
+  }
 
-    a{
-        text-decoration: none;
-        font-size: 1.3rem;
-        color: red;
+  a {
+    text-decoration: none;
+    font-size: 1.3rem;
+    color: red;
+  }
+}
+
+.ProdutosDisponiveis {
+  background-color: red;
+  height: 75vh;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  article {
+    border: solid black;
+    width: 20%;
+    height: 60vh;
+    display: flex;
+    flex-direction: row; //Padrão (fileira) .Os itens são organizados em forma de linha da esquerda para a direita
+    //flex-direction: row-reverse;// Os itens são organizados em forma de linha (fileira da direita para a esquerda.
+    flex-direction: column; //Os itens são organizados em coluna, de cima para baixo.
+    //flex-direction: column-reverse;//Os itens são organizados em forma de coluna iniciando de baixo para cima.
+    justify-content: space-between;
+    align-items: center;
+    img {
+      width: 100%;
+      height: 35vh;
     }
+    button {
+      width: 50%;
+      height: 4vh;
+      cursor: pointer;
+      margin-bottom: 1rem;
+      background-color: #16a34a;
+      color: #ffffff;
+      font-weight: 700;
+      border-radius: 25px;
+      font-size: 1rem;
+    }
+  }
 }
