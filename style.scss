@@ -4,11 +4,10 @@
   box-sizing: border-box;
 }
 Header {
-  background-color: greenyellow;
   display: flex; // ativa as caixas flexíveis
-  justify-content: flex-start; //è o padrão. Os itens são postos no começo do eixo principal eixo "X" (Horizontal)
-  justify-content: flex-end; // Os itens são postos no final do eixo principal
-  justify-content: center; // Os itens são postos no meio do eixo principal
+  //justify-content: flex-start; //è o padrão. Os itens são postos no começo do eixo principal eixo "X" (Horizontal)
+  //justify-content: flex-end; // Os itens são postos no final do eixo principal
+  //justify-content: center; // Os itens são postos no meio do eixo principal
   justify-content: space-around; //O primeiro espaço vazio e o último são iguais. e vão ser metade dos espaçamentos internos
   // justify-content: space-evenly;//todos os espaçamentos entre os itens serão iguais
   // justify-content: space-between;//O primeiro item fica colado na esquerda, o ultimo item colado na direita. e os espaçamentos internos serão iguais.
@@ -17,21 +16,53 @@ Header {
   align-items: flex-end; // os itens são postos no final do eixo "Y" (Vertical)
   align-items: center; // os itens são postos no centro do eixo Y
 
+  div{
+    //border: solid;
+    display: flex;
+    justify-content: space-between;
+    width: 11.5%;
+    align-items: center;
+  }
   h1 {
-    border: solid red;
+    
   }
   nav {
-    border: solid grey;
+    //border: solid grey;
     display: flex;
     justify-content: space-evenly;
-    width: 60%;
+    width: 50%;
+    align-items: center;
   }
 
   a {
     text-decoration: none;
     font-size: 1.3rem;
-    color: red;
+    color: #4B5563;
   }
+  .btnVerdeHeader{
+    background-color: #21c05c;
+    color: #ffffff;
+    cursor: pointer;
+    font-size: 1.5rem;
+    padding: 18px;
+    border-radius: 15px;
+  }
+}
+
+.PrimeiraSection{
+  background-color: yellow;
+height: 50vh;
+
+section{
+  border: solid;
+  width: 50%; 
+  height: 50vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+
+}
+
 }
 
 .ProdutosDisponiveis {
